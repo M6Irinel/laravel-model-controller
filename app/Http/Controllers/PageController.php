@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\MoviesModel;
+use App\Movie;
 
-class MoviesController extends Controller
+class PageController extends Controller
 {
     public function index() {
 
-        $movies = MoviesModel::all();
+        $movies = Movie::all();
 
         return view('movies', compact('movies'));
     }
