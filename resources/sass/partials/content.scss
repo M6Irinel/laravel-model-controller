@@ -1,0 +1,54 @@
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.card {
+    flex-basis: 17%;
+    flex-grow: 1;
+    background-color: #00746e;
+    box-shadow: 4px 10px 6px #202726;
+    text-align: center;
+    color: #fff;
+    min-height: 220px;
+    padding: 20px !important;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    
+    &:hover {
+        scale: 1.05;
+        box-shadow: 4px 10px 7px #202726;
+        border-radius: 7px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        margin-top: 12px;
+        color: #8eee74;
+    }
+
+    .info {
+
+        padding-top: 20px;
+        margin-top: auto;
+
+        p {
+            color: #dbdbdb;
+            margin-top: 8px;
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            span {
+                color: #8eee74;
+            }
+        }
+    }
+}
